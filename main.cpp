@@ -11,11 +11,11 @@ int main(int argc, char** argv) {
   bool restart = true;
 
   if(argc==2){
-    fileName = argv[1];
+    fileName = argv[1];         //2nd command line argument is input for file name
   }
   else{
     "Please enter with format: ./a.out 'file name'";
-    restart = false;
+    restart = false;    //if format is wrong, exit program
   }
 
   while(restart){
@@ -29,12 +29,12 @@ int main(int argc, char** argv) {
 
     if(fileCheck(fileName)!=true){
       cout << "File does not exist. Exiting program. ";
-      break;
+      break;       //check file at beggining of every loop to ensure it exists
     }
 
     int sum = sumLetters(fileName);
     float mean = meanLetters(fileName);
-    float var = variance(fileName, mean);
+    float var = variance(fileName, mean);  //made variables to input into functions
 
     sumA = 0;
     sumC = 0;
@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
     gaussian(mean, sqrt(var));
     printGaussian(mean, sqrt(var));
 
-    string userInput;
+    string userInput;       //user input to determine whether to restart loop 
     cout << "Do you want to process another list? (yes/no) ";
     cin >> userInput;
 
