@@ -20,12 +20,7 @@ int main(int argc, char** argv) {
 
   while(restart){
 
-    sumA = 0;
-    sumC = 0;
-    sumG = 0;
-    sumT = 0;
-    lineCount = 0;
-    letterCount = 0;
+    resetVariables();
 
     if(fileCheck(fileName)!=true){
       cout << "File does not exist. Exiting program. ";
@@ -36,12 +31,7 @@ int main(int argc, char** argv) {
     float mean = meanLetters(fileName);
     float var = variance(fileName, mean);  //made variables to input into functions
 
-    sumA = 0;
-    sumC = 0;
-    sumG = 0;
-    sumT = 0;
-    lineCount = 0;
-    letterCount = 0;
+    resetVariables();
 
     outputstream << "Ricky Vila" << endl;
     outputstream << "ID: 2320586" << endl;
@@ -56,7 +46,7 @@ int main(int argc, char** argv) {
     gaussian(mean, sqrt(var));
     printGaussian(mean, sqrt(var));
 
-    string userInput;       //user input to determine whether to restart loop 
+    string userInput;       //user input to determine whether to restart loop
     cout << "Do you want to process another list? (yes/no) ";
     cin >> userInput;
 

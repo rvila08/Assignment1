@@ -8,6 +8,7 @@ class DNAreader{
 public:
   DNAreader();
   ~DNAreader();
+  void resetVariables();
   int sumLetters(string fileName);
   float meanLetters(string fileName);
   float variance(string fileName, double mean);

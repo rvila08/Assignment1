@@ -1039,12 +1039,12 @@ Prob of C nucleotide is: 23.8095
 Prob of T nucleotide is: 19.0476
 Prob of G nucleotide is: 28.5714
 The probability of AT is: 0
-The probability of AC is: 50
+The probability of AC is: 33.3333
 The probability of AG is: 0
-The probability of AA is: 100
+The probability of AA is: 0
 The probability of TT is: 0
 The probability of TA is: 0
-The probability of TG is: 50
+The probability of TG is: 33.3333
 The probability of TC is: 0
 The probability of GT is: 0
 The probability of GG is: 16.6667

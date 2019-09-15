@@ -258,3 +258,58 @@ bool fileCheck(string fileName){
     fileStream.close();
     return doesFileExist;         // will return false if a file stream isnt open
 }
+
+void resetVariables(){
+  lineCount = 0;
+  letterCount = 0;
+  sumA = 0; 
+  sumC = 0;
+  sumT = 0;
+  sumG = 0;
+
+  sumAA = 0;
+  sumAT = 0;
+  sumAC = 0;
+  sumAG = 0;
+
+  sumCA = 0;
+  sumCC = 0;
+  sumCG = 0;
+  sumCT = 0;
+
+  sumGA = 0;
+  sumGC = 0;
+  sumGG = 0;
+  sumGT = 0;
+
+  sumTT = 0;
+  sumTA = 0;
+  sumTC = 0;
+  sumTG = 0;
+
+  probA = 0;
+  probC = 0;
+  probT = 0;
+  probG = 0;
+
+  probAA = 0;
+  probAC = 0;
+  probAT = 0;
+  probAG = 0;
+
+  probCC = 0;
+  probCA = 0;
+  probCT = 0;
+  probCG = 0;
+
+  probTA = 0;
+  probTC = 0;
+  probTT = 0;
+  probTG = 0;
+
+  probGA = 0;
+  probGC = 0;
+  probGT = 0;
+  probGG = 0;
+
+}
